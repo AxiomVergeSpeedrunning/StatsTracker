@@ -26,8 +26,6 @@ window.onload = function ()
 
 function appendData(data) 
 {
-	ClearAll();
-
 	console.log(data);
 	areaname.innerHTML = `Area Name: ${data.AreaName}`;
 	currenthp.innerHTML = `HP: ${data.CurrentHP}/${data.MaxHP}`;
@@ -36,17 +34,4 @@ function appendData(data)
 	totalitems.innerHTML = `Total Items: ${data.TotalItemPercent}%`;
 	totalscreens.innerHTML = `Total Map: ${data.TotalMapPercent}%`;
 	deathcount.innerHTML = `Deaths: ${data.DeathCount}`;
-}
-
-function ClearAll() {
-	areaname.innerHTML = ``;
-	currenthp.innerHTML = ``;
-	damage.innerHTML = ``;
-	areaitems.innerHTML = ``;
-	areascreens.innerHTML = ``;
-	totalitems.innerHTML = ``;
-	totalscreens.innerHTML = ``;
-	deathcount.innerHTML = ``;
-	bubblecount.innerHTML = ``;
-	brickcount.innerHTML = ``;
 }
